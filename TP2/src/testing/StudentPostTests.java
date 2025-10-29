@@ -32,12 +32,8 @@ package testing;
  * <li>US-05: Replies ✓</li>
  * </ul>
  * 
- * @author Emmanuel Zelaya-Armenta
- * @author Elhan Elias
- * @author Mishal Riyas
- * @author Maheer Naveen
- * @author Ananya Sharma
- * @author Hossain Ahmed
+ * @author Team-25
+ * 
  * @version 1.0
  */
 public class StudentPostTests {
