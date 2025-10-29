@@ -225,35 +225,14 @@ public class ViewPosts {
 	
 	// ==================== SCENE AND PANEL STRUCTURE ====================
 	
-	/**
-	 * Main pane containing all four panels.
-	 */
+	
 	private static Pane mainPane = new Pane();
-	
-	/**
-	 * Main scene displayed in Stage.
-	 */
-	private static Scene mainScene = new Scene(mainPane, width, height);
-
-	/**
-	 * Panel 1: View and manage posts. US-02, US-03, US-04
-	 */
-	private static Pane postsPanel = new Pane();
-	
-	/**
-	 * Panel 2: Create new posts. US-01
-	 */
-	private static Pane createPostPanel = new Pane();
-	
-	/**
-	 * Panel 3: View and manage replies. US-05
-	 */
-	private static Pane repliesPanel = new Pane();
-	
-	/**
-	 * Panel 4: Create new replies. US-05
-	 */
-	private static Pane createReplyPanel = new Pane();
+	private static Scene mainScene = new Scene(mainPane, width, height); // Main Scene!!!!!
+	 
+	private static Pane postsPanel = new Pane();		//Panel 1: View and manage posts
+	private static Pane createPostPanel = new Pane(); 	//Panel 2: Create new posts
+	private static Pane repliesPanel = new Pane();		//Panel 3: View and manage replies.
+	private static Pane createReplyPanel = new Pane();	//Panel 4: Create new replies
 	
 	/**
 	 * Entry point to display posts interface.
@@ -298,6 +277,7 @@ public class ViewPosts {
 		repliesPanel();
 		createReplyPanel();
 		postsPanel.setVisible(true);
+		ControllerPosts.performViewPosts();
 	}
 	
 	/**

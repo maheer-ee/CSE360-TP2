@@ -106,7 +106,7 @@ public class ControllerPosts {
      * @see ViewPosts#showPostsPanel()
      * @see database.Database#getAllPosts()
      */
-    protected static void performViewPosts() {
+    public static void performViewPosts() {
         try {    
             // US-04: Get all posts from database
             List<Post> allPosts = ViewPosts.theDatabase.getAllPosts();

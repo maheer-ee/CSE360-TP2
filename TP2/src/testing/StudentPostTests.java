@@ -296,7 +296,7 @@ public class StudentPostTests {
      * 
      * <p><strong>Test Steps:</strong></p>
      * <ol>
-     * <li>User selects another user's reply</li>
+     * <li> As Role 1 User selects another user's reply</li>
      * <li>Click "Edit Reply"</li>
      * </ol>
      * 
@@ -311,6 +311,50 @@ public class StudentPostTests {
      * 
      */
     public void test10_CannotEditOthersReply() {
+    }
+    
+    /**
+     * Test 11: Delete own reply.
+     * 
+     * <p><strong>Requirements Tested:</strong> US-05 (Delete Replies)</p>
+     * 
+     * <p><strong>Test Steps:</strong></p>
+     * <ol>
+     * <li>User selects their own reply</li>
+     * <li>Click "Delete Reply"</li>
+     * <li>Click OK</li>
+     * </ol>
+     * 
+     * <p><strong>Expected Result:</strong> Post is GONE</p>
+     * <p><strong>Result:</strong> ✓ PASS</p>
+     * 
+     * 
+     */
+    public void test11_DeleteOwnReply() {
+    }
+    
+    /**
+     * Test 12: Cannot Delete someone else's reply (security test).
+     * 
+     * <p><strong>Requirements Tested:</strong> US-05 (Reply Security)</p>
+     * 
+     * <p><strong>Test Steps:</strong></p>
+     * <ol>
+     * <li> As Role 1 User selects another user's reply</li>
+     * <li>Click "Delete Reply"</li>
+     * </ol>
+     * 
+     * <p><strong>Expected Result:</strong></p>
+     * <ul>
+     * <li>Error dialog: "You can only Delete your own replies"</li>
+     * <li>Reply unchanged</li>
+     * </ul>
+     * 
+     * <p><strong>Result:</strong> ✓ PASS</p>
+     * 
+     * 
+     */
+    public void test12_CannotDeleteOthersReply() {
     }
     
     // ==================== ADMIN TESTS ====================
@@ -338,6 +382,7 @@ public class StudentPostTests {
      * 
      * 
      */
-    public void test11_AdminCanDeleteAnyPost() {
+    
+    public void test13_AdminCanDeleteAnyPost() {
     }
 }
